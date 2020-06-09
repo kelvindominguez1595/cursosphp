@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Guardar eventos</h1>
-    <form action="../php/eventos/guardar.php" method="POST">
+    <form action="../php/eventos/guardar.php" method="POST" enctype="multipart/form-data">
         <label for="">Nombre de evento</label><br>
         <input type="text" name="nombre_evento" placeholder="Escriba el evento">
         <p></p>
@@ -19,6 +19,9 @@
         <p></p>
         <label for="">Hora</label><br>
         <input type="time" name="hora_evento" placeholder="Escriba el evento">
+        <p></p>
+        <label for="">Imagen del curso</label><br>
+        <input type="file" name="imagen" placeholder="Escriba el evento">
         <p></p>
         <input type="submit" value="Guardar">
     </form>

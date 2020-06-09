@@ -30,6 +30,7 @@
             ?>
             <tr>
                 <td> <?php echo $item['id_eventos'];?> </td>
+                <td> <img width="100px" src="../image/<?php echo $item['imagen'];?>" alt=""> </td>
                 <td> <?php echo $item['nombre_evento'];?> </td>
                 <td> <?php echo $item['descripcion'];?> </td>
                 <td> <?php echo $item['fecha_evento'];?> </td>

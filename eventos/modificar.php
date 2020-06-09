@@ -16,7 +16,7 @@
 </head>
 <body>
     <h1>Guardar eventos</h1>
-    <form action="../php/eventos/modificar.php" method="POST">
+    <form action="../php/eventos/modificar.php" method="POST" enctype="multipart/form-data">
         <label for="">Nombre de evento</label><br>
         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
         <input type="text" name="nombre_evento" value="<?php echo  $item['nombre_evento']; ?>">
@@ -31,6 +31,9 @@
         <p></p>
         <label for="">Hora</label><br>
         <input type="time" name="hora_evento" value="<?php echo  $item['hora_evento']; ?>">
+        <p></p>
+        <label for="">Imagen del curso</label><br>
+        <input type="file" name="imagen" placeholder="Escriba el evento">
         <p></p>
         <input type="submit" value="Actualizar">
     </form>
